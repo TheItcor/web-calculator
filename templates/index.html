@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- CSS from app -->
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="box_calc" style="margin-top: 200px">
+        <div class="box_calc_answer"> 
+            <p>{{ answer }}</p>
+            <p>{{ equation }}</p>
+        </div><br>
+        <form action="/" method="post">
+            <div style="margin-left: 10px;">
+                <!-- It's looks ugly, but i didn't find another solution. i'm still newbie in programming -->
+                <button type="sumbit" value="9" name="symbol" class="btn btn-outline-primary btn-circle">9</button>
+                <button type="sumbit" value="8" name="symbol" class="btn btn-outline-primary btn-circle">8</button>
+                <button type="sumbit" value="7" name="symbol" class="btn btn-outline-primary btn-circle">7</button>
+                <button type="sumbit" value="del_all" name="symbol" class="btn btn-outline-primary btn-circle">C</button>
+                <button type="sumbit" value="+" name="symbol" class="btn btn-outline-primary btn-circle">+</button><br><br>
+                <button type="sumbit" value="6" name="symbol" class="btn btn-outline-primary btn-circle">6</button>
+                <button type="sumbit" value="5" name="symbol" class="btn btn-outline-primary btn-circle">5</button>
+                <button type="sumbit" value="4" name="symbol" class="btn btn-outline-primary btn-circle">4</button>
+                <button type="sumbit" value="-" name="symbol" class="btn btn-outline-primary btn-circle">-</button>
+                <button type="sumbit" value="*" name="symbol" class="btn btn-outline-primary btn-circle">*</button><br><br>
+                <button type="sumbit" value="3" name="symbol" class="btn btn-outline-primary btn-circle">3</button>
+                <button type="sumbit" value="2" name="symbol" class="btn btn-outline-primary btn-circle">2</button>
+                <button type="sumbit" value="1" name="symbol" class="btn btn-outline-primary btn-circle">1</button>
+                <button type="sumbit" value="/" name="symbol" class="btn btn-outline-primary btn-circle">/</button>
+                <button type="sumbit" value="del_one" name="symbol" class="btn btn-outline-primary btn-circle"><</button><br><br>
+                <button type="sumbit" value="0" name="symbol" class="btn btn-outline-primary btn-circle">0</button>
+                <button type="sumbit" value="=" name="symbol" class="btn btn-outline-primary btn-circle " style=" width: 197px; background-color:rgba(65, 165, 223, 0.7) ">=</button>
+                <button type="sumbit" value="." name="symbol" class="btn btn-outline-primary btn-circle">.</button>
+            </div>
+        </form>
+        <br>
+    </div>
+</body>
+</html>
